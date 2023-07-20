@@ -17,9 +17,9 @@ The admin username and password are set during the build process. Update the doc
 - password: admin1234
 
 # How to use
-- Clone this repository: git clone https://github.com/menzerr/marklogic-preinit-docker.git
-- Build the Docker image: docker build -t menzerr/marklogic-preinit:1.0.0 .
-- Run a container from the image: docker run -d menzerr/marklogic-preinit:1.0.0
+- Clone this repository: `git clone https://github.com/menzerr/marklogic-preinit-docker.git`
+- Build the Docker image: `docker build -t my-marklogic-preinit .`
+- Run a container from the image: `docker run -p 9000:8000 -p 9001:8001 -p 9002:8002 -d my-marklogic-preinit`
 
 # Version
 Currently, this Dockerfile only supports MarkLogic 11.0.2. Of course, feel free to modify and try other versions.
